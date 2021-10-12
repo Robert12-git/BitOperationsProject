@@ -16,22 +16,22 @@ daca se face overflow, adica daca suma noastra depaseste limitele spatiului pred
 
 	Communication.c
 
-	Observatii:
-	-taskurile au fost efectuate cu ajutorul functiilor send_squanch ce trimite mesajul codat si recv_squanch ce primeste
+Observatii:
+-taskurile au fost efectuate cu ajutorul functiilor send_squanch ce trimite mesajul codat si recv_squanch ce primeste
 mesajul codat
-	-mesajul despre care vorbim pentru functiile ajutatoare reprezinta numere de la 1 la 26 ce constituie litere de la 
+-mesajul despre care vorbim pentru functiile ajutatoare reprezinta numere de la 1 la 26 ce constituie litere de la 
 A la Z
-	-decodarea unui mesaje se face adunand mesajul cu 64 pentru a aduce fiecare litera la forma ei in codul ASCII, pentru
+-decodarea unui mesaje se face adunand mesajul cu 64 pentru a aduce fiecare litera la forma ei in codul ASCII, pentru
 ca in final sa facem o conversie in forma de caracter(ex: (char)(mesaj + 64)).
-	-codarea unui mesaj reprezinta procesul invers decodarii, asa ca nu il vom mai descrie
-	-atunci cand se va pune problema sa primim un sir de caractere, inainte de toate vom primi lungimea codata a sirului
-	de caractere. Faptul ca lungimea este codata inseamna ca biti lungimii au fost shiftati cu 2 biti la stanga, astfel pentru
-	a avea acces la valoarea lungimii este necesara efectuarea unei shiftari la stanga cu 2 biti pentru a deseta ultimii 2 biti
-	in cazul in care unul dintre acestia ar fi fost setat, pentru ca apoi sa efectuam o shiftare la dreapta cu 4 biti. Acest
-	proces reprezinta decodarea lungimii.
-	-asemeni primirii unui sir de caractere, trimiterea va presupune inainte de toate codarea lungimii sirului de
-	caractere. Acest lucru se face efectuand o shiftare la stanga cu 2 biti.
-	-mai multe detalii in legatura cu rezolvarea acestor taskuri apar in codul sursa
+-codarea unui mesaj reprezinta procesul invers decodarii, asa ca nu il vom mai descrie
+-atunci cand se va pune problema sa primim un sir de caractere, inainte de toate vom primi lungimea codata a sirului
+de caractere. Faptul ca lungimea este codata inseamna ca biti lungimii au fost shiftati cu 2 biti la stanga, astfel pentru
+a avea acces la valoarea lungimii este necesara efectuarea unei shiftari la stanga cu 2 biti pentru a deseta ultimii 2 biti
+in cazul in care unul dintre acestia ar fi fost setat, pentru ca apoi sa efectuam o shiftare la dreapta cu 4 biti. Acest
+proces reprezinta decodarea lungimii.
+-asemeni primirii unui sir de caractere, trimiterea va presupune inainte de toate codarea lungimii sirului de
+caractere. Acest lucru se face efectuand o shiftare la stanga cu 2 biti.
+-mai multe detalii in legatura cu rezolvarea acestor taskuri apar in codul sursa
 
 	Hunt.c
 	
